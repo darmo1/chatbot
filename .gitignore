@@ -1,0 +1,22 @@
+# Environments
+.env
+.env.*
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# macOS
+.DS_Store
+
+__pycache__/
+.vscode/
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
