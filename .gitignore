@@ -28,7 +28,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-lock.yaml
 bun.lockb
-
+devops/env/*.env.*
 # Docker
 *.tar
 docker-compose.override.yml
@@ -42,3 +42,4 @@ docker-compose.override.yml
 # OS-specific
 Thumbs.db
 ehthumbs.db
+*.db

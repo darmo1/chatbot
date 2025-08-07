@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ../ 
+      dockerfile: ./devops/Dockerfile.backend 
+    container_name: chatbot_backend
+    ports:
+      - "8000:8000"
+    environment:
+      
+      - API_KEY=${API_KEY}
+      - DB_PATH=/app/BE-boot/chroma_db
+    volumes:
+ 
+      - ./BE-boot:/app/BE-boot
+
+  frontend:
+    build:
+      context: ../ 
+      dockerfile: ./devops/Dockerfile.frontend 
+    container_name: chatbot_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+    volumes:     
+      - ./fe-chatbot:/app/fe-chatbot
+      - /app/fe-chatbot/node_modules 
