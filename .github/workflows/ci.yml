@@ -1,0 +1,3 @@
+env:
+  FRONTEND_DIR: fe-chatboot
+  BACKEND_DIR: BE-boot
