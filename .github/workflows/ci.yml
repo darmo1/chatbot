@@ -12,7 +12,7 @@ env:
   BACKEND_APP_NAME: be-chatbot-app
   FRONTEND_APP_NAME: fe-chatbot-app
   BACKEND_DIR: BE-boot
-  FRONTEND_DIR: fe-chatbot
+  FRONTEND_DIR: fe-chatboot
 
 jobs:
   build:
